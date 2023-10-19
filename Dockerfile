@@ -1,5 +1,5 @@
 FROM quay.io/xelectra/xasena:latest
-RUN git clone https://github.com/MR-DARK-SHADOW/X-asena-QR /root/nipuna
+RUN git clone https://github.com/MR-DARK-SHADOW/X-asena-QR /root/MR-DARK-SHADOW
 WORKDIR /root/xasenaqr/
 RUN npm install npm@latest
 RUN yarn install --network-concurrency 1
