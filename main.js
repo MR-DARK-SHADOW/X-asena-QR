@@ -21,7 +21,7 @@ const {
     const pino = require("pino");
     let PORT = process.env.PORT || 3030;
     const PastebinAPI = require("pastebin-js"),
-    pastebin = new PastebinAPI("z34jMV9-z13SJhd-YBNgdqxD97e5xubG");
+    pastebin = new PastebinAPI("h4cO2gJEMwmgmBoteYufW6_weLvBYCqT");
 
     app.use("/", (req, res) => {
 
