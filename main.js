@@ -82,18 +82,6 @@ const {
                           .generateNodeStream({ type: "nodebuffer", streamFiles: true })
                           .pipe(file.createWriteStream("session.zip"))
                           .on("finish", async function () {
-                            await session.sendMessage(session.user.id, {
-                                document: {
-                                    url: './session.zip'
-                                },
-                                fileName: "session.zip",
-                                mimetype: "application/zip",
-                            });
-                            await fs.rm('./session', {
-                                recursive: true, force: true
-                            })
-                            process.send('reset')
-                          });
                        
                     }
                     if (
